@@ -9,7 +9,7 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 
 function BlogPage() {
   return (
-    <div className='h-screen bg-white'>
+    <div className='hidden h-screen bg-white'>
       <div className='h-3/6 bg-white'>
         <div className='flex justify-center items-center h-full'>
             <div className='flex w-[1200px] h-[400px] bg-gray rounded-3xl mt-[-100px]'>

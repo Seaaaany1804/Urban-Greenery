@@ -8,7 +8,7 @@ import newSix from '../assets/newSix.png';
 
 function ProductPage() {
   return (
-    <div className='h-screen bg-white'>
+    <div className='hidden h-screen bg-white'>
       <div className='relative flex justify-center'>
         <h1 className='font-dm-serif text-[40px] font-bold text-primary mt-[-20px]'> Our Products </h1>
         <div className='absolute bottom-[-10px] w-[8%] border-2 border-secondary'>  </div>

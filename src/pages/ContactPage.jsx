@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 function ContactPage() {
   return (
-    <div className='h-[65vh] bg-primary'>
+    <div className='hidden h-[65vh] bg-primary'>
       <div>
         <h1 className='text-white text-center font-dm-serif text-[30px] pt-8 tracking-wider'> 
             Stay In The Loop With Special Offers, <br/>

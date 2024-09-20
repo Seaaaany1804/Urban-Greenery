@@ -9,7 +9,7 @@ import { HiMiniScissors } from "react-icons/hi2";
 
 function AboutPage() {
   return (
-    <div className='h-screen bg-white'>
+    <div className='hidden h-screen bg-white'>
       <div className='h-2/6 bg-primary'>
       <div className='flex justify-center items-center h-full'>
         <div className='grid grid-cols-3 gap-8 place-items-center'>
