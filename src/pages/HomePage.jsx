@@ -10,7 +10,7 @@ function Home() {
         <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 h-[80%]'>
         <div className='flex flex-col items-center justify-center space-y-4 sm:justify-start md:justify-center'>
           <div className='text-white flex flex-col items-center text-center md:text-start lg:text-start'>
-            <h1 className='font-dm-serif text-[48px] md:ml-[20px] md:text-[48px] md:w-[420px] lg:w-[500px] lg:ml-0 lg:text-[60px]'>
+            <h1 className='font-dm-serif text-[48px] md:ml-[20px] md:text-[48px] md:w-[420px] lg:w-[500px] lg:ml-0 lg:text-[60px] xl:text-[68px]'>
               Nature At Your Door Step
             </h1>
 

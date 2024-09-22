@@ -8,19 +8,19 @@ import newSix from '../assets/newSix.png';
 
 function ProductPage() {
   return (
-    <div className='hidden h-screen bg-white'>
+    <div className='h-screen bg-white px-[100px]'>
       <div className='relative flex justify-center'>
-        <h1 className='font-dm-serif text-[40px] font-bold text-primary mt-[-20px]'> Our Products </h1>
-        <div className='absolute bottom-[-10px] w-[8%] border-2 border-secondary'>  </div>
+        <h1 className='font-dm-serif text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-bold text-primary '> Our Products </h1>
+        <div className='absolute bottom-[-10px] sm:w-[50%] w-[10%] border-2 border-secondary'>  </div>
       </div>
 
-      <div className='mt-16 ml-48 font-poppins tracking-widest text-primary flex space-x-4'>
-        <button type="button" className='bg-white hover:bg-primary hover:text-white border-primary border-2 rounded-full py-1 px-4'> WHAT'S NEW </button>
-        <button type="button" className='bg-white hover:bg-primary hover:text-white border-primary border-2 rounded-full py-1 px-4'> BEST SELLERS </button>
-        <button type="button" className='bg-white hover:bg-primary hover:text-white border-primary border-2 rounded-full py-1 px-4'> CUSTOMER FAVORITES </button>
+      <div className='mt-16 font-poppins tracking-widest text-primary flex justify-center md:justify-center lg:justify-start space-x-4'>
+        <button type="button" className='bg-white hover:bg-primary hover:text-white border-primary border-2 rounded-full text-[14px] py-1 px-4'> WHAT'S NEW </button>
+        <button type="button" className='bg-white hover:bg-primary hover:text-white border-primary border-2 rounded-full text-[14px] py-1 px-4'> BEST SELLERS </button>
+        <button type="button" className='bg-white hover:bg-primary hover:text-white border-primary border-2 rounded-full text-[14px] py-1 px-4'> CUSTOMER FAVORITES </button>
       </div>
 
-      <div className='flex justify-center items-center mt-10'>
+      <div className='hidden flex flex-wrap justify-center items-center mt-10'>
         <div className='grid grid-cols-4 gap-24'>
           <div>
           <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
@@ -65,7 +65,7 @@ function ProductPage() {
         </div>
       </div>
 
-      <div className='flex justify-center items-center mt-8'>
+      <div className='hidden flex justify-center items-center mt-8'>
         <div className='grid grid-cols-4 gap-24'>
         <div>
           <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
