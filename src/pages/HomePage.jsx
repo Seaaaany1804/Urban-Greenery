@@ -34,7 +34,7 @@ function Home() {
             <img src={plantUser} alt="Plant User" className='w-full'/>
           </div>
 
-          <div className='hidden absolute left-[40px]'>
+          <div className='hidden 2xl:block absolute left-[40px]'>
             <h1 className='font-poppins font-bold text-[20px] tracking-widest text-white bg-primary ring-2 ring-white p-8 px-10 rounded-full flex flex-col items-center justify-center'>
               Price 
               <span className='text-[24px] font-extrabold text-white'>$12</span>
