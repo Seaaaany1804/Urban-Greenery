@@ -18,9 +18,9 @@ function ProductPage() {
     { id: 8, name: 'Homalomena Rubescens', price: '$4.00', img: newTwo },
     { id: 9, name: 'Homalomena Rubescens', price: '$4.00', img: newThree },
     { id: 10, name: 'Homalomena Rubescens', price: '$4.00', img: newFour },
-    { id: 11, name: 'Homalomena Rubescens', price: '$4.00', img: newFour },
-    { id: 12, name: 'Homalomena Rubescens', price: '$4.00', img: newFour },
-    { id: 13, name: 'Homalomena Rubescens', price: '$4.00', img: newFour },
+    { id: 11, name: 'Homalomena Rubescens', price: '$4.00', img: newFive },
+    { id: 12, name: 'Homalomena Rubescens', price: '$4.00', img: newSix },
+    { id: 13, name: 'Homalomena Rubescens', price: '$4.00', img: newOne },
   ];
 
   // State to handle the current page and products per page
@@ -95,34 +95,33 @@ function ProductPage() {
         </button>
       </div>
 
-      <div className='flex flex-wrap'>
-      <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-10 grid-flow-row`}>
-          <div className="flex-1">
-            {firstColumn.map(product => (
-              <div key={product.id} className="mb-6">
-                <div className='flex justify-center items-center w-[250px] h-[230px] bg-gray rounded-3xl hover:bg-secondary'>
-                  <img src={product.img} alt={product.name} className='w-[140px]' />
-                </div>
-                <div className='font-poppins tracking-wider mt-2 ml-2'>
-                  <h1>{product.name}</h1>
-                  <h1 className='text-tertiary font-bold'>{product.price}</h1>
-                </div>
+      {/* Corrected grid container */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-10">
+        <div className="flex-1">
+          {firstColumn.map(product => (
+            <div key={product.id} className="mb-6">
+              <div className='flex justify-center items-center w-[250px] h-[230px] bg-gray rounded-3xl hover:bg-secondary'>
+                <img src={product.img} alt={product.name} className='w-[140px]' />
               </div>
-            ))}
-          </div>
-          <div className="flex-1">
-            {secondColumn.map(product => (
-              <div key={product.id} className="mb-6">
-                <div className='flex justify-center items-center w-[250px] h-[230px] bg-gray rounded-3xl hover:bg-secondary'>
-                  <img src={product.img} alt={product.name} className='w-[140px]' />
-                </div>
-                <div className='font-poppins tracking-wider mt-2 ml-2'>
-                  <h1>{product.name}</h1>
-                  <h1 className='text-tertiary font-bold'>{product.price}</h1>
-                </div>
+              <div className='font-poppins tracking-wider mt-2 ml-2'>
+                <h1>{product.name}</h1>
+                <h1 className='text-tertiary font-bold'>{product.price}</h1>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex-1">
+          {secondColumn.map(product => (
+            <div key={product.id} className="mb-6">
+              <div className='flex justify-center items-center w-[250px] h-[230px] bg-gray rounded-3xl hover:bg-secondary'>
+                <img src={product.img} alt={product.name} className='w-[140px]' />
+              </div>
+              <div className='font-poppins tracking-wider mt-2 ml-2'>
+                <h1>{product.name}</h1>
+                <h1 className='text-tertiary font-bold'>{product.price}</h1>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -143,100 +142,8 @@ function ProductPage() {
           Next
         </button>
       </div>
-
-
-
-      {/* <div className='flex flex-wrap justify-start items-center mt-10'>
-        <div className='grid grid-cols-4 gap-24'>
-          <div>
-          <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
-            <img src={newOne} alt="Plant One" className='w-[180px]'/>
-          </div>
-          <div className='font-poppins tracking-wider mt-2 ml-2'>
-            <h1> Homalomena Rubescens</h1>
-            <h1 className='text-tertiary font-bold'> $4.00</h1>
-          </div>
-          </div>
-
-          <div>
-          <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
-            <img src={newTwo} alt="Plant Two" className='w-[200px]'/>
-          </div>
-          <div className='font-poppins tracking-wider mt-2 ml-2'>
-            <h1> Homalomena Rubescens</h1>
-            <h1 className='text-tertiary font-bold'> $4.00</h1>
-          </div>
-          </div>
-
-          <div>
-          <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
-            <img src={newThree} alt="Plant Three" className='w-[220px]'/>
-          </div>
-          <div className='font-poppins tracking-wider mt-2 ml-2'>
-            <h1> Homalomena Rubescens</h1>
-            <h1 className='text-tertiary font-bold'> $4.00</h1>
-          </div>
-          </div>
-
-          <div>
-          <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
-            <img src={newFour} alt="Plant Three" className='w-[220px]'/>
-          </div>
-          <div className='font-poppins tracking-wider mt-2 ml-2'>
-            <h1> Homalomena Rubescens</h1>
-            <h1 className='text-tertiary font-bold'> $4.00</h1>
-          </div>
-          </div>
-
-        </div>
-      </div> */}
-
-      {/* <div className='flex justify-start items-center mt-8'>
-        <div className='grid grid-cols-4 gap-24'>
-        <div>
-          <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
-            <img src={newFive} alt="Plant One" className='w-[180px]'/>
-          </div>
-          <div className='font-poppins tracking-wider mt-2 ml-2'>
-            <h1> Homalomena Rubescens</h1>
-            <h1 className='text-tertiary font-bold'> $4.00</h1>
-          </div>
-          </div>
-
-          <div>
-          <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
-            <img src={newSix} alt="Plant Two" className='w-[200px]'/>
-          </div>
-          <div className='font-poppins tracking-wider mt-2 ml-2'>
-            <h1> Homalomena Rubescens</h1>
-            <h1 className='text-tertiary font-bold'> $4.00</h1>
-          </div>
-          </div>
-
-          <div>
-          <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
-            <img src={newOne} alt="Plant Three" className='w-[180px]'/>
-          </div>
-          <div className='font-poppins tracking-wider mt-2 ml-2'>
-            <h1> Homalomena Rubescens</h1>
-            <h1 className='text-tertiary font-bold'> $4.00</h1>
-          </div>
-          </div>
-
-          <div>
-          <div className='flex justify-center items-center w-[300px] h-[280px] bg-gray rounded-3xl hover:bg-secondary'>
-            <img src={newTwo} alt="Plant Three" className='w-[180px]'/>
-          </div>
-          <div className='font-poppins tracking-wider mt-2 ml-2'>
-            <h1> Homalomena Rubescens</h1>
-            <h1 className='text-tertiary font-bold'> $4.00</h1>
-          </div>
-          </div>
-
-          </div>
-      </div> */}
-      </div>
-  )
+    </div>
+  );
 }
 
-export default ProductPage
+export default ProductPage;
