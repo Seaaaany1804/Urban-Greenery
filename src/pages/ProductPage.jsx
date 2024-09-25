@@ -5,6 +5,8 @@ import newThree from '../assets/newThree.png';
 import newFour from '../assets/newFour.png';
 import newFive from '../assets/newFive.png';
 import newSix from '../assets/newSix.png';
+import { FaAngleLeft } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 
 function ProductPage() {
   const products = [
@@ -23,11 +25,9 @@ function ProductPage() {
     { id: 13, name: 'Homalomena Rubescens', price: '$4.00', img: newOne },
   ];
 
-  // State to handle the current page and products per page
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage, setProductsPerPage] = useState(1);
 
-  // Detect the screen size and adjust products per page
   useEffect(() => {
     const updateProductsPerPage = () => {
       const width = window.innerWidth;
@@ -51,17 +51,10 @@ function ProductPage() {
     return () => window.removeEventListener('resize', updateProductsPerPage);
   }, []);
 
-  // Logic to get current products based on pagination
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
 
-  // Split products into two columns if showing more than 4 products
-  const half = Math.ceil(currentProducts.length / 2);
-  const firstColumn = currentProducts.slice(0, half);
-  const secondColumn = currentProducts.slice(half);
-
-  // Handle pagination click
   const handleNextPage = () => {
     if (currentPage < Math.ceil(products.length / productsPerPage)) {
       setCurrentPage(currentPage + 1);
@@ -95,51 +88,36 @@ function ProductPage() {
         </button>
       </div>
 
-      {/* Corrected grid container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-10">
-        <div className="flex-1">
-          {firstColumn.map(product => (
-            <div key={product.id} className="mb-6">
-              <div className='flex justify-center items-center w-[250px] h-[230px] bg-gray rounded-3xl hover:bg-secondary'>
-                <img src={product.img} alt={product.name} className='w-[140px]' />
-              </div>
-              <div className='font-poppins tracking-wider mt-2 ml-2'>
-                <h1>{product.name}</h1>
-                <h1 className='text-tertiary font-bold'>{product.price}</h1>
-              </div>
+      {/* Updated Grid for Horizontal Layout */}
+      <div className='place-items-center xl:place-items-start grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-10'>
+        {currentProducts.map(product => (
+          <div key={product.id} className='mb-6'>
+            <div className='flex justify-center items-center w-[250px] h-[230px] bg-gray rounded-3xl hover:bg-secondary'>
+              <img src={product.img} alt={product.name} className='w-[140px]' />
             </div>
-          ))}
-        </div>
-        <div className="flex-1">
-          {secondColumn.map(product => (
-            <div key={product.id} className="mb-6">
-              <div className='flex justify-center items-center w-[250px] h-[230px] bg-gray rounded-3xl hover:bg-secondary'>
-                <img src={product.img} alt={product.name} className='w-[140px]' />
-              </div>
-              <div className='font-poppins tracking-wider mt-2 ml-2'>
-                <h1>{product.name}</h1>
-                <h1 className='text-tertiary font-bold'>{product.price}</h1>
-              </div>
+            <div className='font-poppins tracking-wider mt-2 ml-2'>
+              <h1>{product.name}</h1>
+              <h1 className='text-tertiary font-bold'>{product.price}</h1>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
       {/* Pagination Controls */}
-      <div className='flex justify-between mt-6'>
+      <div className='flex justify-center gap-12 mt-6'>
         <button
           onClick={handlePrevPage}
           disabled={currentPage === 1}
-          className='px-4 py-2 border border-primary rounded-full'
+          className='px-2 py-2 border border-primary rounded-full hover:bg-primary hover:text-white'
         >
-          Previous
+          <FaAngleLeft className='text-2xl'/>
         </button>
         <button
           onClick={handleNextPage}
           disabled={currentPage === Math.ceil(products.length / productsPerPage)}
-          className='px-4 py-2 border border-primary rounded-full'
+          className='px-2 py-2 border border-primary rounded-full hover:bg-primary hover:text-white'
         >
-          Next
+          <FaAngleRight className='text-2xl'/>
         </button>
       </div>
     </div>
