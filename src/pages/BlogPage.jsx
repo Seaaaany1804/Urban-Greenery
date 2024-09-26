@@ -9,36 +9,35 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 
 function BlogPage() {
   return (
-    <div className='hidden h-screen bg-white'>
+    <div className='h-screen bg-white'>
       <div className='h-3/6 bg-white'>
-        <div className='flex justify-center items-center h-full'>
-            <div className='flex w-[1200px] h-[400px] bg-gray rounded-3xl mt-[-100px]'>
+        <div className='flex flex-col justify-center items-center h-full'>
+            <div className='flex flex-col sm:flex-row w-[30%] h-[110%] sm:w-[90%] sm:h-[55%] md:h-[70%] lg:h-[90%] bg-gray rounded-3xl mt-[-100px]'>
                 <div>
-                    <img src={fullPlant} alt="Full Plants" className='h-[400px] rounded-l-3xl' />
+                    <img src={fullPlant} alt="Full Plants" className='lg:h-[100%] lg:w-[700px] sm:h-[100%] md:h-[100%] rounded-t-3xl sm:rounded-l-3xl' />
                 </div>
                 
-                <div className='flex justify-center w-[70%] mt-8'> 
-                    <div>
-                        <h1 className='text-primary tracking-widest font-bold font-poppins text-[30px]'> 
-                            Come with us  how to grow your <br/> plants to 
+                <div className='flex justify-center text-center w-[100%] mt-8 '> 
+                    <div className='flex flex-col lg:items-start justify-center lg:w-[90%] px-[20px]'>
+                        <h1 className='text-center sm:text-start text-primary tracking-widest font-bold font-poppins lg:w-[80%] xl:w-[100%] text-[18px] lg:text-[30px]'> 
+                            Come with us  how to grow your plants to 
                         be better and healthier</h1>
                         <div className='mt-8'>
-                            <h1 className='font-poppins tracking-widest'> Join us on a journey to learn the art of growing healthier and <br/> 
-                            more vibrant plants. We're here to share tips and insights that <br/>
-                            will help you nurture your garden to its fullest potential. Come <br/>
-                            along with us, and let's explore the simple yet effective ways to <br/>
+                            <h1 className='hidden xl:block font-poppins tracking-widest lg:text-start'> Join us on a journey to learn the art of growing healthier and 
+                            more vibrant plants. We're here to share tips and insights that 
+                            will help you nurture your garden to its fullest potential. Come 
+                            along with us, and let's explore the simple yet effective ways to
                             make your plans thrive, naturally. </h1>
                         </div>
-                        <button type="button" className='flex items-center text-[14px] text-white font-poppins mt-8 bg-tertiary p-4 px-8 rounded-full'> Read More  
+                        <div className='hidden sm:block'>
+                        <button type="button" className=' xl:mt-4 2xl:mt-8 flex items-center w-[180px] text-[14px] text-white font-poppins bg-tertiary p-4 px-8 rounded-full'> Read More  
                             <FaCircleArrowRight className='ml-4 text-[20px] text-white '/>
                             </button>
+                        </div>
                     </div>
                 </div>
-
-
-
-                
             </div>
+            
         </div>
       </div>
 
@@ -47,7 +46,7 @@ function BlogPage() {
             <h1 className='font-dm-serif text-primary text-[30px] pt-8 tracking-wide font-semibold text-center'> Follow us on Instagram </h1>
         </div>
 
-        <div className='flex justify-center items-center h-[40vh] space-x-8'>
+        <div className='flex flex-wrap justify-center items-center h-[40vh] space-x-8'>
             <img src={instaOne} alt="Instagram Pic1" className='w-[220px] h-[220px] rounded-2xl ring-2 ring-white'/>
             <img src={instaTwo} alt="Instagram Pic1" className='w-[220px] h-[220px] rounded-2xl ring-2 ring-white'/>
             <img src={instaThree} alt="Instagram Pic1" className='w-[220px] h-[220px] rounded-2xl ring-2 ring-white'/>
