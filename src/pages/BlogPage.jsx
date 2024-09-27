@@ -1,7 +1,6 @@
 import React from 'react'
 import fullPlant from '../assets/fullplant.png';
 import instaOne from '../assets/insta-1.png';
-import instaTwo from '../assets/insta-2.png';
 import instaThree from '../assets/insta-3.png';
 import instaFour from '../assets/insta-4.png';
 import instaFive from '../assets/insta-5.png';
@@ -18,7 +17,7 @@ function BlogPage() {
                 </div>
                 
                 <div className='flex justify-center text-center w-[100%] mt-8 '> 
-                    <div className='flex flex-col lg:items-start justify-center lg:w-[90%] px-[20px]'>
+                    <div className='flex flex-col lg:items-start justify-center lg:w-[90%] 2xl:w-[80%] px-[20px]'>
                         <h1 className='text-center sm:text-start text-primary tracking-widest font-bold font-poppins lg:w-[80%] xl:w-[100%] text-[18px] lg:text-[30px]'> 
                             Come with us  how to grow your plants to 
                         be better and healthier</h1>
@@ -46,12 +45,11 @@ function BlogPage() {
             <h1 className='font-dm-serif text-primary text-[30px] pt-8 tracking-wide font-semibold text-center'> Follow us on Instagram </h1>
         </div>
 
-        <div className='flex flex-wrap justify-center items-center h-[40vh] space-x-8'>
-            <img src={instaOne} alt="Instagram Pic1" className='w-[220px] h-[220px] rounded-2xl ring-2 ring-white'/>
-            <img src={instaTwo} alt="Instagram Pic1" className='w-[220px] h-[220px] rounded-2xl ring-2 ring-white'/>
-            <img src={instaThree} alt="Instagram Pic1" className='w-[220px] h-[220px] rounded-2xl ring-2 ring-white'/>
-            <img src={instaFour} alt="Instagram Pic1" className='w-[220px] h-[220px] rounded-2xl ring-2 ring-white'/>
-            <img src={instaFive} alt="Instagram Pic1" className='w-[220px] h-[220px] rounded-2xl ring-2 ring-white'/>
+        <div className='flex flex-wrap justify-center items-center h-[40vh] gap-12'>
+            <img src={instaOne} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
+            <img src={instaThree} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
+            <img src={instaFour} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
+            <img src={instaFive} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
         </div>
       </div>    
     </div>
