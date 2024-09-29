@@ -24,7 +24,7 @@ function ContactPage() {
             +639912345678 <br/>
             example@gmail.com</h1>
             <div className='hidden absolute right-[-100px] top-[-30px] h-[160px] border-[1px] border-white'>  </div>
-            <div className='absolute bottom-[-10px] xl:bottom-[-50px] md:bottom-[-30px] w-[80%] sm:w-[60%] border-[1px] border-white'></div>
+            <div className='absolute bottom-[-10px] xl:bottom-[-50px] md:bottom-[-10px] w-[80%] sm:w-[60%] border-[1px] border-white'></div>
         </div>
       
         <div className='w-full items-center relative text-center flex flex-col justify-center'>
@@ -37,7 +37,7 @@ function ContactPage() {
                     <FaInstagram className='text-white text-[30px]' />
                     <FaYoutube className='text-white text-[32px]' />
                 </div>
-            <div className='absolute bottom-[-10px] xl:bottom-[-50px] md:bottom-[-30px] w-[80%] sm:w-[60%] border-[1px] border-white'></div>    
+            <div className='absolute bottom-[-10px] xl:bottom-[-50px] md:bottom-[-10px] w-[80%] sm:w-[60%] border-[1px] border-white'></div>    
             <div className='hidden absolute right-[-100px] top-[0px] h-[160px] border-[1px] border-white'>  </div>
         </div>
 
