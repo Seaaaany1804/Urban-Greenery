@@ -45,11 +45,11 @@ function BlogPage() {
             <h1 className='font-dm-serif text-primary text-[30px] pt-8 tracking-wide font-semibold text-center'> Follow us on Instagram </h1>
         </div>
 
-        <div className='flex flex-wrap justify-center items-center h-[40vh] gap-12'>
-            <img src={instaOne} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
-            <img src={instaThree} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
-            <img src={instaFour} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
-            <img src={instaFive} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
+        <div className='flex flex-wrap justify-center items-center h-[40vh] gap-8'>
+            <img src={instaOne} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[150px] md:h-[150px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
+            <img src={instaThree} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[150px] md:h-[150px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
+            <img src={instaFour} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[150px] md:h-[150px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
+            <img src={instaFive} alt="Instagram Pic1" className='w-[130px] sm:w-[140px] sm:h-[140px] md:w-[150px] md:h-[150px]  h-[130px] lg:w-[220px] lg:h-[220px] rounded-2xl ring-2 ring-white'/>
         </div>
       </div>    
     </div>
