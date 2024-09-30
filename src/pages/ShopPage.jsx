@@ -67,7 +67,7 @@ function ShopPage() {
         </div>
 
         <div className='w-[500px] h-[180px] sm:w-[500px] sm:h-[200px] md:w-[350px] md:h-[220px] lg:w-[480px] lg:h-[300px] bg-gray rounded-3xl'>
-          <div className='grid grid-cols-1 lg:grid-cols-2 h-full'>
+          <div className='grid grid-cols-1 lg:grid-cols-2  h-full'>
                   <div className='flex flex-col justify-center items-center '>
                   <div className='text-center lg:text-start'>
                       <h1 className='font-dm-serif text-[20px] md:text-[18px] text-primary font-bold'> Best Sellers</h1>

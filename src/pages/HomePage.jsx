@@ -20,7 +20,7 @@ function Home() {
             </h1>
 
             <div className="flex justify-center md:ml-[25px] md:justify-start w-full">
-              <button type="button" className='flex font-poppins mt-8 bg-tertiary p-4 px-10 rounded-full'>
+              <button type="button" className='flex font-poppins mt-8 bg-tertiary p-4 px-8 rounded-full'>
                 Discover Now
                 <FaCircleArrowRight className='ml-4 text-[28px]' />
               </button>
