@@ -29,7 +29,9 @@ function BlogPage() {
                             make your plans thrive, naturally. </h1>
                         </div>
                         <div className='hidden sm:block'>
-                        <button type="button" className=' xl:mt-4 2xl:mt-8 flex items-center w-[180px] text-[14px] text-white font-poppins bg-tertiary p-4 px-8 rounded-full'> Read More  
+                        <button 
+                          type="button" 
+                          className=' xl:mt-4 2xl:mt-8 flex items-center w-[180px] text-[14px] text-white font-poppins bg-tertiary p-4 px-8 rounded-full'> Read More  
                             <FaCircleArrowRight className='ml-4 text-[20px] text-white '/>
                             </button>
                         </div>
