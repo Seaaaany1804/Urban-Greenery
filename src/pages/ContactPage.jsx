@@ -12,8 +12,12 @@ function ContactPage() {
       </div>
 
       <div className='relative flex justify-center space-x-4 mt-8'>
-        <input type="email" name="Email" placeholder='Email' id="1" className='bg-[#385444] p-2 md:p-3 xl:p-4 xl:w-[23%] w-[60%] sm:w-[40%] text-white rounded-md font-poppins'/>
-        <button type="button" className='bg-tertiary px-2 rounded-md'> <BiLogoTelegram className=' text-[24px] md:text-[32px] xl:text-[40px] text-white'/>  </button>
+        <input type="email" 
+          name="Email" placeholder='Email' 
+          id="1" 
+          className='bg-[#385444] p-2 md:p-3 xl:p-4 xl:w-[23%] w-[60%] sm:w-[40%] text-white rounded-md font-poppins'/>
+        <button type="button" 
+          className='bg-tertiary px-2 rounded-md'> <BiLogoTelegram className=' text-[24px] md:text-[32px] xl:text-[40px] text-white'/>  </button>
         <div className='absolute bottom-[-20px] xl:bottom-[-50px] md:bottom-[-30px] w-[80%] sm:w-[60%] lg:w-[80%] border-[1px] border-white'>  </div>
       </div>
 
